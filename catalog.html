@@ -39,7 +39,7 @@
         <h1 class="catalog-name">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
+            <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -48,7 +48,7 @@
         <form class="filtration_structure" method="post" action="https://echo.htmlacademy.ru">
             <div class="components">
                 <fieldset class="components_structure">
-                    <p class="components_title">Инфаструктура:</p>
+                    <legend class="components_title">Инфаструктура:</legend>
                     <ul class="components_list">
                         <li class="components_item">
                             <label class="component_label-checkbox">
@@ -73,23 +73,23 @@
             </div>
             <div class="filtration_house">
                 <fieldset class="house_structure">
-                    <p class="house_title">Тип жилья:</p>
+                    <legend class="house_title">Тип жилья:</legend>
                     <ul class="house_list">
                         <li class="house_item">
                             <label class="house_label">
-                                <input class="house_radio" type="radio" name="house_type" checked>
+                                <input class="house_radio" type="radio" value="hotel" name="house_type" checked >
                                 <span class="component_text">Гостиница</span>
                             </label>
                         </li>
                         <li class="house_item">
                           <label class="house_label">
-                              <input class="house_radio" type="radio" name="house_type">
+                              <input class="house_radio" type="radio" value="motel" name="house_type">
                               <span class="component_text">Мотель</span>
                             </label>
                         </li>
                         <li class="house_item">
                           <label class="house_label">
-                              <input class="house_radio" type="radio" name="house_type">
+                              <input class="house_radio" type="radio" value="apartments" name="house_type">
                               <span class="component_text">Апартаменты</span>
                             </label>
                         </li>
@@ -97,7 +97,7 @@
                 </fieldset>
             </div>
             <div class="price-filter">
-              
+              <legend class="house_title">Стоимость Р:</legend>
            </div>
            <button class="button" type="submit">Показать</button>
            <button class="button" type="reset">Сбросить</button>
@@ -112,15 +112,19 @@
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
             </select>
-            <a href="#" class="button_card">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-            <a href="#" class="button_full">
-              <span class="visually-hidden">Показать целиком</span>
-            </a>
-            <a href="#" class="button_list">
-              <span class="visually-hidden">Показать список</span>
-            </a>
+          </div>
+          <div class="button_display">
+            <ul class="button_display_list">
+              <li class="button_display_item">
+                <button class="button_card visually-hidden">Показать карточки</button>
+              </li>
+              <li class="button_display_item">
+                <button class="button_full visually-hidden">Показать целиком</button>
+              </li>
+              <li class="button_display_item">
+                <button class="button_list visually-hidden">Показать список</button>
+              </li>
+            </ul>
            </div>
       </main>
   <section class="products_cart">
@@ -134,7 +138,12 @@
         <p>От 4000 Р</p>
         <a class="button_more" href="#">Подробнее</a>
         <a class="button_like" href="#">В Избранное</a>
-        <img src="" alt="Количество звезд">
+        <ul class="rating_list">
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+        </ul>
         <p class="rating">Рейтинг: 8,5</p>
       </div>
       <div class="product-card">
@@ -146,7 +155,11 @@
         <p>От 3000 Р</p>
         <a class="button_more" href="#">Подробнее</a>
         <a class="button_like" href="#">В Избранное</a>
-        <img src="" alt="Количество звезд">
+        <ul class="rating_list">
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+        </ul>
         <p class="rating">Рейтинг: 8,9</p>
       </div>
       <div class="product-card">
@@ -158,7 +171,10 @@
         <p>От 2000 Р</p>
         <a class="button_more" href="#">Подробнее</a>
         <a class="button_like" href="#">В Избранное</a>
-        <img src="" alt="Количество звезд">
+        <ul class="rating_list">
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+        </ul>
         <p class="rating">Рейтинг: 9,2</p>
       </div>
       <div class="product-card">
@@ -170,7 +186,10 @@
         <p>От 3000 Р</p>
         <a class="button_more" href="#">Подробнее</a>
         <a class="button_like" href="#">В Избранное</a>
-        <img src="" alt="Количество звезд">
+        <ul class="rating_list">
+          <li class="rating_item"></li>
+          <li class="rating_item"></li>
+        </ul>
         <p class="rating">Рейтинг: 9,2</p>
       </div>
     </div>
@@ -206,6 +225,7 @@
           <option value="one">1</option>
           <option value="two">2</option>
           <option value="three">3</option>
+          <option value="four" selected>4</option>
         </select>
       </div>
     </div>
@@ -219,7 +239,7 @@
      <form action="">
       <div class="">
          <input type="text" placeholder="Ваш E-mail" name="mail">
-          <input type="submit" value="Подписаться">
+         <input type="submit" value="Подписаться">
         </div>
       </form>
     </div>
