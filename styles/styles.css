@@ -30,6 +30,7 @@ margin: 0 auto;
 .main-nav{
     background-color: white;
     display: flex;
+    align-items: center;
 
 }
 .logo{
@@ -53,6 +54,7 @@ margin: 0 auto;
     list-style-type: none;
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .navigation-link{
@@ -68,18 +70,22 @@ margin: 0 auto;
     width: 42px;
     text-align: center;
 }
-.menu-button{
+.button{
     font-weight: bold;
-    line-height: 20px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: #756257;
     border-radius: 4px;
+    border-color: transparent;
+}
+
+.button_want{
     padding: 9px 34px 9px 34px;
     margin-right: 70px;
     margin-left: 20px;
+    background-color: #756257;
+    line-height: 20px;
 }
 
 .main-page-slogan{
@@ -199,14 +205,10 @@ margin: 0 auto;
 .travel_search{
     text-align: center;
 }
-.search_hotel_button{
-    font-weight: bold;
+.button_search{
     font-size: 20px;
     line-height: 36px;
-    text-align: center;
     border-color: transparent;
-    text-transform: uppercase;
-    color: #FFFFFF;
     background: #756257;
     border-radius: 10px;
     width: 575px;
@@ -252,8 +254,8 @@ margin: 0 auto;
     box-sizing: border-box;
     border-radius: 10px;
 }
-.search_hotel_button:active{
-    font-size: 16px;
+.search_hotel_button span:active{
+    opacity: 0.3;
 }
 
 .sub_butoon{
@@ -267,6 +269,8 @@ margin: 0 auto;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    border-color: transparent;
+
 }
 .footer-phone a {
     font-size: 40px;
@@ -370,46 +374,33 @@ margin: 0 auto;
     text-align: center;
 }
 
-.button{
+/*.button{
     font-weight: bold;
     font-size: 16px;
     line-height: 21px;
 }
+*/
 
 .button_more{
     background: #756257;
-    border-radius: 4px;
-    font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    text-align: center;
-    text-transform: uppercase;
     padding: 10px 20px 10px 20px ;
-    color: #FFFFFF;;
     text-decoration: none;
 }
 
 .button_like{
     background: #83B3D3;
-    border-radius: 4px;
-    font-weight: bold;
     font-size: 16px;
     line-height: 21px;
-    text-transform: uppercase;
     padding: 10px 20px 10px 20px ;
-    color: #FFFFFF;;
-    text-decoration: none;
     justify-content: space-between;
     width: 160px;
 }
 .button_see_more{
     background: #83B3D3;
-    border-radius: 4px;
-    font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    text-transform: uppercase;
-    color: #FFFFFF;;
     padding: 17px 0 17px 0;
     justify-content: space-between;
     width: 620px;
@@ -459,15 +450,10 @@ margin: 0 auto;
     color: #333333;
 }
 .button_apply{
-    background: #83B3D3;
-    border-radius: 4px;
     font-weight: bold;
+    background: #83B3D3;
     font-size: 16px;
     line-height: 21px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
     justify-content: space-between;
     width: 160px;
     height: 48px;
@@ -475,14 +461,9 @@ margin: 0 auto;
 
 .button_reset{
     background: rgba(255, 255, 255, 0.5);
-    border-radius: 4px;
-    font-weight: bold;
     font-size: 18px;
     line-height: 23px;
-    align-items: center;
-    text-align: center;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    text-transform: none;
     justify-content: space-between;
     width: 160px;
     height: 48px;
