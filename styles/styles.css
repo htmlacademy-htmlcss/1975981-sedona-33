@@ -19,14 +19,40 @@ body{
   font-size: 16px;
   line-height: 24px;
   color: black ;
-  background-color: white ;
+  background-color: #F2F2F2 ;
+  margin: 0;
 }
 
+.container{
+width: 1200px;
+margin: 0 auto;
+}
+.main-nav{
+    background-color: white;
+    display: flex;
+
+}
+.logo{
+    margin-left: 70px;
+    margin-right: 30px;
+}
 .menu{
     list-style-type: none;
+    display: flex;
+
 }
+.menu-title{
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+
+
+
 .user-menu{
     list-style-type: none;
+    display: flex;
+    margin-left: auto;
 }
 
 .navigation-link{
@@ -38,18 +64,22 @@ body{
   color: #000000;
   text-decoration: none;
 }
-
+.user-menu-icon{
+    width: 42px;
+    text-align: center;
+}
 .menu-button{
     font-weight: bold;
     line-height: 20px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: #FFFFFF;
     background-color: #756257;
     border-radius: 4px;
     padding: 9px 34px 9px 34px;
-    
+    margin-right: 70px;
+    margin-left: 20px;
 }
 
 .main-page-slogan{
@@ -72,7 +102,7 @@ body{
     line-height: 28px;  
     text-align: center;
     text-transform: uppercase;
-    color: white;
+    color: #FFFFFF;
 }
 
 .benefits_n{
@@ -80,14 +110,14 @@ body{
     line-height: 21px;
     text-align: center;
     text-transform: uppercase;
-    color: white;
+    color: #FFFFFF;
 }
 
 .benefits_desc{
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: white;
+    color: #FFFFFF;
 }
 .benefits-one{
     background: #83B3D3;
@@ -137,7 +167,7 @@ body{
     line-height: 28px;  
     text-align: center;
     text-transform: uppercase;
-    color: black
+    color: #000000
 }
 .benefits_n_l{
     font-size: 18px;
@@ -243,7 +273,7 @@ body{
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
-    color: black;
+    color: #333333;
 }
 
 /*css для каталога*/
@@ -256,7 +286,7 @@ body{
     font-weight: bold;
     font-size: 60px;
     line-height: 78px;
-    color: white;
+    color: #FFFFFF;;
 }
 
 .breadcrumbs{
@@ -267,19 +297,19 @@ body{
 
 .breadcrumbs-item a{
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;;
 }
 .components_title{
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    color: white;
+    color: #FFFFFF;;
 }
 
 .component_text{
     font-size: 18px;
     line-height: 23px;
-    color: white;
+    color: #FFFFFF;;
 }
 .components_list{
     list-style-type: none;
@@ -291,7 +321,7 @@ body{
     font-weight: bold;
     font-size: 20px;
     line-height: 26px;
-    color: white;
+    color: #FFFFFF;;
 }
 
 .nav_title{
@@ -355,7 +385,7 @@ body{
     text-align: center;
     text-transform: uppercase;
     padding: 10px 20px 10px 20px ;
-    color: white;
+    color: #FFFFFF;;
     text-decoration: none;
 }
 
@@ -367,7 +397,7 @@ body{
     line-height: 21px;
     text-transform: uppercase;
     padding: 10px 20px 10px 20px ;
-    color: white;
+    color: #FFFFFF;;
     text-decoration: none;
     justify-content: space-between;
     width: 160px;
@@ -379,7 +409,7 @@ body{
     font-size: 20px;
     line-height: 26px;
     text-transform: uppercase;
-    color: white;
+    color: #FFFFFF;;
     padding: 17px 0 17px 0;
     justify-content: space-between;
     width: 620px;
@@ -419,7 +449,7 @@ body{
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
-    color: black;
+    color: #000000;
 }
 
 .subscribe_catalog_desc{
