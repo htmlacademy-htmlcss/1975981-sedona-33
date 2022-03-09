@@ -30,17 +30,19 @@
               <a class="navigation-link" href="catalog.html"><img src="images/favorite.svg" alt="Избранное" width="18.05" height="17"></a>
               <span hidden>Избранное</span>
             </li>
-            <a href="" class="menu-button">Хочу сюда!</a>
+            <a href="" class="button button_want">Хочу сюда!</a>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="catalog_container">
+    <main class="catalog_container container">
       <div class="container">
         <h1 class="catalog-name">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
+            <a class="breadcrumbs-link visually-hidden" href="index.html"><img src="images/home_logo.svg" alt="Главная"></a>
+            <span hidden>Главная</span>
+            <img class="nav_arrow" src="images/nav-link.svg" alt="">
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -100,36 +102,36 @@
             <div class="price-filter">
               <h2 class="house_title">Стоимость Р:</h2>
            </div>
-           <button class="button_apply" type="submit">Применить</button>
-           <button class="button_reset" type="reset">Сбросить</button>
+           <button class="button button_apply" type="submit">Применить</button>
+           <button class="button button_reset" type="reset">Сбросить</button>
          </form>
-         <div class="container">
-          <p class="nav_title">Найдено гостиниц: 
-            <span class="nav_text">38</span>
-          </p>
-          <div class="nav_select">
-            <select class="select-control" aria-label="Сортировка">
-              <option value="cheap">Сначала дешёвые</option>
-              <option value="expensive">Сначала дорогие</option>
-              <option value="popular">Сначала популярные</option>
-            </select>
-          </div>
-          <div class="button_display">
-            <ul class="button_display_list">
-              <li class="button_display_item">
-                <button class="button_card visually-hidden" type="button">Показать карточки</button>
-              </li>
-              <li class="button_display_item">
-                <button class="button_full visually-hidden" type="button">Показать целиком</button>
-              </li>
-              <li class="button_display_item">
-                <button class="button_list visually-hidden" type="button">Показать список</button>
-              </li>
-            </ul>
-           </div>
       </main>
+         <div class="container hotels_container">
+           <div class="filtration">
+             <p class="nav_title">Найдено гостиниц: 38</p>
+              <div class="nav_select">
+                <select class="select-control" aria-label="Сортировка">
+                 <option value="cheap">Сначала дешёвые</option>
+                 <option value="expensive">Сначала дорогие</option>
+                 <option value="popular">Сначала популярные</option>
+                </select>
+              </div>
+               <div class="button_display">
+                 <ul class="button_display_list">
+                   <li class="button_display_item">
+                      <button class="button_card visually-hidden" type="button">Показать карточки</button>
+                    </li>
+                   <li class="button_display_item">
+                      <button class="button_full visually-hidden" type="button">Показать целиком</button>
+                   </li>
+                   <li class="button_display_item">
+                      <button class="button_list visually-hidden" type="button">Показать список</button>
+                   </li>
+                 </ul>
+                </div>
+            </div>
   <section class="products_cart">
-    <div class="container">
+    <div class="container cards">
       <div class="product-card">
         <a class="product-card-link" href="#">
           <img class="product-card-image" src="images/hotel-1.jpg" alt="Фотография отеля" width="299" height="206">
@@ -137,8 +139,8 @@
         </a>
         <p class="desc_hot_and_price">Гостиница</p>
         <p class="desc_hot_and_price">От 4000 Р</p>
-        <a class="button_more" href="#">Подробнее</a>
-        <a class="button_like" href="#">В Избранное</a>
+        <a class="button button_more" href="#">Подробнее</a>
+        <a class="button button_like" href="#">В Избранное</a>
         <ul class="rating_list">
           <li class="rating_item"></li>
           <li class="rating_item"></li>
@@ -154,8 +156,8 @@
         </a>
         <p class="desc_hot_and_price">Гостиница</p>
         <p class="desc_hot_and_price">От 3000 Р</p>
-        <a class="button_more" href="#">Подробнее</a>
-        <a class="button_like" href="#">В Избранное</a>
+        <a class="button button_more" href="#">Подробнее</a>
+        <a class="button button_like" href="#">В Избранное</a>
         <ul class="rating_list">
           <li class="rating_item"></li>
           <li class="rating_item"></li>
@@ -170,8 +172,8 @@
         </a>
         <p class="desc_hot_and_price">Гостиница</p>
         <p class="desc_hot_and_price">От 2000 Р</p>
-        <a class="button_more" href="#">Подробнее</a>
-        <a class="button_like" href="#">В Избранное</a>
+        <a class="button button_more" href="#">Подробнее</a>
+        <a class="button button_like" href="#">В Избранное</a>
         <ul class="rating_list">
           <li class="rating_item"></li>
           <li class="rating_item"></li>
@@ -185,8 +187,8 @@
         </a>
         <p class="desc_hot_and_price">Гостиница</p>
         <p class="desc_hot_and_price">От 3000 Р</p>
-        <a class="button_more" href="#">Подробнее</a>
-        <a class="button_like" href="#">В Избранное</a>
+        <a class="button button_more" href="#">Подробнее</a>
+        <a class="button button_like" href="#">В Избранное</a>
         <ul class="rating_list">
           <li class="rating_item"></li>
           <li class="rating_item"></li>
@@ -195,11 +197,11 @@
       </div>
     </div>
     <div class="see-more">
-      <button class="button_see_more" type="button">Загрузить еще</button>
+      <button class="button button_see_more" type="button">Загрузить еще</button>
     </div>
   </section>
   <section class="pagination">
-    <div class="container">
+    <div class="container pagin">
       <ul class="pagination_list">
         <li class="pagination-item-selected">
           <a class="pagination-link">1</a>
@@ -220,7 +222,7 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-      <div>
+      <div class="hotels_p">
        <p class="hotels_q">Гостиниц на странице:</p>
         <select class="select-control" aria-label="Количество гостиниц">
           <option value="one">1</option>
@@ -231,14 +233,14 @@
       </div>
     </div>
   </section>
-  <section class="subscribe">
-    <div class="container">
+  <section class="subscribe container">
+    <div class="container_sub_cat">
       <div class="subscribe_text">
-        <h2 class="subscribe_catalog_title">Подпишитесь на рассылку</h2>
-        <p class="subscribe_catalog_desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <h2 class="subscribe_title_cat">Подпишитесь на рассылку</h2>
+        <p class="subscribe_desc_cat">Только полезная информация и никакого спама, честное бойскаутское!</p>
      </div>
      <form action="">
-      <div class="">
+      <div class="sub_general">
          <input class="sub_field" type="text" placeholder="Ваш E-mail" name="mail">
          <input class="sub_butoon" type="submit" value="Подписаться">
         </div>
@@ -246,18 +248,20 @@
     </div>
   </section>
   <footer>
-    <div class="footer-social">
-      <a href="https://twitter.com/htmlacademy_ru"><img src="images/social-twitter.svg" alt="Логотип Твиттер" width="18" height="15"></a>
-      <a href="https://www.facebook.com/htmlacademy"><img src="images/social-facebook.svg" alt="Логотип Фейсбук" width="10" height="18"></a>
-      <a href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="images/social-youtube.svg" alt="Логотип Ютуб" width="20" height="16"></a>
-    </div>
-    <div class="footer-phone">
-      <a href="tel:+78121212">+7(812)812-12-12</a>
-    </div>
-    <div class="footer-logo">
-      <a href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.png" alt="Логотип Академии" width="115" height="34"></a>
-    </div>
-  </footer>
+    <div class="container_footer">
+      <div class="footer-social">
+         <a href="https://twitter.com/htmlacademy_ru"><img src="images/social-twitter.svg" alt="Логотип Твиттер" width="18" height="15"></a>
+         <a href="https://www.facebook.com/htmlacademy"><img src="images/social-facebook.svg" alt="Логотип Фейсбук" width="10" height="18"></a>
+        <a href="https://www.youtube.com/c/HTMLAcademyRUS"><img src="images/social-youtube.svg" alt="Логотип Ютуб" width="20" height="16"></a>
+     </div>
+     <div class="footer-phone">
+        <a href="tel:+78128121212">+7(812)812-12-12</a>
+     </div>
+     <div class="footer-logo">
+       <a href="https://htmlacademy.ru/"><img src="images/logo_htmlacademy.png" alt="Логотип Академии" width="115" height="34"></a>
+     </div>
+ </div>
+ </footer>
 </body>
 </html>
     
